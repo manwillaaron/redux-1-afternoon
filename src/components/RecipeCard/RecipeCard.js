@@ -1,5 +1,10 @@
+
+
+
+
 import React from "react";
 import "./RecipeCard.css";
+
 
 let RecipeCard = props => {
   const {
@@ -10,11 +15,14 @@ let RecipeCard = props => {
     ingredients,
     instructions
   } = props;
+
+ 
   const ingredientsDisplay = ingredients.map((ingredient, i) => {
-    return <li key={i}>{ingredient}</li>;
+    return <li key={i} >{ingredient}</li>;
   });
+  
   const instructionsDisplay = instructions.map((instruction, i) => {
-    return <li key={i}>{instruction}</li>;
+    return <li key={i} >{instruction}</li>;
   });
   return (
     <div className="RecipeCard">
